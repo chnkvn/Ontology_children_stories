@@ -1,0 +1,1807 @@
+[ {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid26"
+    }, {
+      "@id" : "_:genid24"
+    }, {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://dbpedia.org/property/genre"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://dbpedia.org/ontology/type"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://dbpedia.org/ontology/author"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Way of structure of a narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Genre"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Plot of a story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "plot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story is Written by Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAuthor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://dbpedia.org/property/notableWorks"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Author creates Character\nIf Author writes Story and Story hasCharacter, then Author creates Characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "createsCharacter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://dbpedia.org/property/notableWorks"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Author creates work of Genre type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "writesStoryOfGenre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://dbpedia.org/property/notableWorks"
+    }, {
+      "@id" : "http://dbpedia.org/property/genre"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story is published under Format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "existsIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/property/genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story has Genre (e.g. Tragedy, Fantasy...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "belongsToGenre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/property/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  }, {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/property/notableWorks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Author writes Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isAuthorOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/property/released",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "publicationYear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/property/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Title of a story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Andrew_Davenport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Andrew Davenport"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An audience is a group of people who participate in a show or encounter a work of art, literature (in which they are called \"readers\"), theatre, music (in which they are called \"listeners\"), video games (in which they are called \"players\"), or academics in any medium. Audience members participate in different ways in different kinds of art. Some events invite overt audience participation and others allow only modest clapping and criticism and reception. (en)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Audience"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Way of sharing of a story that involves texts or pictures, rarely sounds, and is split in pages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Brothers_Grimm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Brothers Grimm"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Category:Media_formats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Way of sharing of a story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Media Format"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Charles_Perrault",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charles Perrault"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Fiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fiction is any creative work, chiefly any narrative work, portraying individuals, events, or places in ways that are imaginary or inconsistent with history, fact, or plausibility. In a narrow sense, \"fiction\" refers to written narratives in prose – often referring specifically to novels, novellas, and short stories. More broadly, however, fiction encompasses imaginary narratives expressed in any medium, including not just writings but also live theatrical performances, films, television programs, radio dramas, comics, role-playing games, and video games."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Hayao_Miyazaki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hayao Miyazaki"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/J._K._Rowling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "J.K. Rowling"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Jean_Racine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jean Racine"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/One_(manga_artist)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ONE"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Poetry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Poetry (derived from the Greek poiesis, \"making\"), also called verse, is a form of literature that uses aesthetic and often rhythmic qualities of language − such as phonaesthetics, sound symbolism, and metre − to evoke meanings in addition to, or in place of, a prosaic ostensible meaning. A poem is a literary composition, written by a poet, using this principle. A Western cultural tradition (extending at least from Homer to Rilke) associates the production of poetry with inspiration – often by a Muse (either classical or contemporary)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Poetry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Prose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Prose"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Theatre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Theatre or theater is a collaborative form of performing art that uses live performers, usually actors or actresses, to present the experience of a real or imagined event before a live audience in a specific place, often a stage. The performers may communicate this experience to the audience through combinations of gesture, speech, song, music, and dance. Elements of art, such as painted scenery and stagecraft such as lighting are used to enhance the physicality, presence and immediacy of the experience. The specific place of the performance is also named by the word \"theatre\" as derived from the Ancient Greek θέατρον (théatron, \"a place for viewing\"), itself from θεάομαι (theáomai, \"to see\", \"to watch\", \"to observe\")."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Theatre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Verse_(poetry)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Verse"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Victor_Hugo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Victor Hugo"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Way of sharing of a story that involves images and often sounds, where characters are animated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an ontology about children stories"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Way of sharing that can be listened to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Narrative that was inspired about true events"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/property/name" : [ {
+    "@value" : "Britannicus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Britannicus (Character)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Jean_Racine"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@value" : "Britanicus"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Verse_(poetry)"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Britannicus (story)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Individual or entity that has a role in a narrative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of a character, his role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience composed of person between 3 and 12 years old"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Child audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Story that targets children between 3 and 12 years old"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Child Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Writting form of texts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Discourse form"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Epic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State where the story has an end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Finished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Poetry"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/J._K._Rowling"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@value" : "Harry Potter"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Harry Potter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jean Valjean"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Verse_(poetry)"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "La légende de Saint Nicolas"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Victor_Hugo"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Les Miserables"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Brothers_Grimm"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@value" : "Little Red Riding Hood"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Little Red Riding Hood (Grimm)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Charles_Perrault"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@value" : "Little Red Riding Hood"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Little Red Riding Hood (Perrault)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Protagonist of a story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Main Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "dbr:Hero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mr. Leblanc"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mr. Madeleine"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Hayao_Miyazaki"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@value" : "My Neighbor Totoro"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "My Neighbor Totoro"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/abstract" : [ {
+    "@language" : "en",
+    "@value" : "One-Punch Man (Japanese: ワンパンマン, Hepburn: Wanpanman) is a Japanese superhero manga series created by One. It tells the story of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. One wrote the original webcomic manga version in early 2009. A digital manga remake began publication on Shueisha's Tonari no Young Jump website in June 2012. Written by One and illustrated by Yusuke Murata, its chapters are periodically compiled and published into individual tankōbon volumes. As of June 2022, 26 volumes have been released. In North America, Viz Media has licensed the remake manga for English language release and has serialized it in its Weekly Shonen Jump digital magazine. An anime adaptation produced by Madhouse was broadcast in Japan from October to December 2015. A second season, produced by J.C.Staff, was broadcast from April to July 2019. A third season has been announced. Licensed in North America by Viz Media, it premiered in the United States on Adult Swim's Toonami programming block in July 2016. The second season premiered in October 2019. As of June 2012, the original webcomic manga surpassed 7.9 million hits. As of April 2020, the manga remake had sold over 30 million copies worldwide, making it one of the best-selling manga series."
+  } ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/One_(manga_artist)"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy"
+  } ],
+  "http://dbpedia.org/property/released" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2015"
+  } ],
+  "http://dbpedia.org/property/title" : [ {
+    "@language" : "en",
+    "@value" : "One-Punch Man: Road to Hero"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "One Punch Man"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Story is not finished yet, can be paused or still published."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ongoing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Play Captation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/property/name" : [ {
+    "@value" : "Saitama"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription" : [ {
+    "@value" : "Main character of Saitama, is able to beat foes in one punch."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Level of progress of a story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Status"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Narrative that tells about at least one main character, is written by at least one author, that has a status, written in a certain discourse form, targets an audience, has literary genre and is available in a media format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Story"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Audience composed of persons between 12 and 18 years old"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Teen Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Story that targets teenagers (children between 12 and 18 years old)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Teen Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  }, {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/author" : [ {
+    "@id" : "http://dbpedia.org/resource/Andrew_Davenport"
+  } ],
+  "http://dbpedia.org/property/genre" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po"
+  }, {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn" : [ {
+    "@id" : "http://dbpedia.org/resource/Prose"
+  } ],
+  "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dbpedia.org/resource/Fiction"
+  }, {
+    "@id" : "http://dbpedia.org/resource/Theatre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ultime Fauchelevent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience consumes Format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story can be listened to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/type"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story can be read"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/type"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story can be watched"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/type"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story has Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story has MainCharacter, which is Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AudioFormat is the representation of story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Character is a character of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a Media Format is consumed by an audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Character is created by Author\ninverse property of CreatesCharacter which implies:\nif Character is present in a story and story is written by Author then Character is created by Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/resource/Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story is not Finished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story is Finished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Format is the representation of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Category:Media_formats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Genre is a theme of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/class/yago/WikicatLiteraryGenres"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A MainCharacter is a Character of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ChildAudience is interested by ChildStory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience is interested by Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TeenAudience is interested by Teen Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an audio format is listen to by an audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a text format is read by an audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story has Status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TextFormat is the representation of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "VideoFormat is the representation of Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a video format is watched by an audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/resource/Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story is written under a specific form of discourse (Prose, Verse)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience listens to audio Format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience reads Text Format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Story targets an Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ChildStory targets ChildAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TeenStory targets TeenAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Audience watches Video Format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/resource/Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory"
+    }, {
+      "@id" : "http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat"
+    } ]
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/resource/Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An author is the creator or originator of any written work such as a book or play, and is also considered a writer or poet. More broadly defined, an author is \"the person who originated or gave existence to anything\" and whose authorship determines responsibility for what was created."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Author"
+  } ]
+} ]

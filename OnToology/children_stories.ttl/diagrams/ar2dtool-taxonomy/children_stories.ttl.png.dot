@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Character" "http://dbpedia.org/resource/Category:Media_formats" "dbr:Poetry" "base:Finished" "base:Biography" "dbr:Audience" "base:Ongoing" "dbr:Theatre" "base:ChildStory" "dbr:Fiction" "base:Status" "base:TeenStory" "base:TeenAudience" "dbr:Book" "dbr:Video" "yago:WikicatLiteraryGenres" "base:Story" "base:Audio" "base:MainCharacter" "base:ChildAudience" ; /*classes style*/
+	"dbr:Theatre" -> "yago:WikicatLiteraryGenres" [ label = "rdfs:subClassOf" ];
+	"dbr:Video" -> "http://dbpedia.org/resource/Category:Media_formats" [ label = "rdfs:subClassOf" ];
+	"base:TeenStory" -> "base:Story" [ label = "rdfs:subClassOf" ];
+	"base:ChildStory" -> "base:Story" [ label = "rdfs:subClassOf" ];
+	"base:Audio" -> "http://dbpedia.org/resource/Category:Media_formats" [ label = "rdfs:subClassOf" ];
+	"base:TeenAudience" -> "dbr:Audience" [ label = "rdfs:subClassOf" ];
+	"dbr:Fiction" -> "yago:WikicatLiteraryGenres" [ label = "rdfs:subClassOf" ];
+	"base:MainCharacter" -> "base:Character" [ label = "rdfs:subClassOf" ];
+	"base:Biography" -> "yago:WikicatLiteraryGenres" [ label = "rdfs:subClassOf" ];
+	"dbr:Book" -> "http://dbpedia.org/resource/Category:Media_formats" [ label = "rdfs:subClassOf" ];
+	"base:Finished" -> "base:Status" [ label = "rdfs:subClassOf" ];
+	"base:ChildAudience" -> "dbr:Audience" [ label = "rdfs:subClassOf" ];
+	"dbr:Poetry" -> "yago:WikicatLiteraryGenres" [ label = "rdfs:subClassOf" ];
+	"base:Ongoing" -> "base:Status" [ label = "rdfs:subClassOf" ];
+
+}
