@@ -1,0 +1,1025 @@
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an ontology about children stories"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/author
+<http://dbpedia.org/ontology/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2002/07/owl#inverseOf> <http://dbpedia.org/property/notableWorks> .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/resource/Author> .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is Written by Author" .
+<http://dbpedia.org/ontology/author> <http://www.w3.org/2000/01/rdf-schema#label> "hasAuthor"@en .
+# 
+# http://dbpedia.org/ontology/creator
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy> .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Author> .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dbpedia.org/property/notableWorks> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "Author creates Character\nIf Author writes Story and Story hasCharacter, then Author creates Characters" .
+<http://dbpedia.org/ontology/creator> <http://www.w3.org/2000/01/rdf-schema#label> "createsCharacter" .
+# 
+# http://dbpedia.org/ontology/genre
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Author> .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dbpedia.org/property/genre> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dbpedia.org/property/notableWorks> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Author creates work of Genre type" .
+<http://dbpedia.org/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#label> "writesStoryOfGenre" .
+# 
+# http://dbpedia.org/ontology/type
+<http://dbpedia.org/ontology/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/type> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> .
+<http://dbpedia.org/ontology/type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/ontology/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://dbpedia.org/ontology/type> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is published under Format" .
+<http://dbpedia.org/ontology/type> <http://www.w3.org/2000/01/rdf-schema#label> "existsIn" .
+# 
+# http://dbpedia.org/property/genre
+<http://dbpedia.org/property/genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/property/genre> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory> .
+<http://dbpedia.org/property/genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/property/genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://dbpedia.org/property/genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Story has Genre (e.g. Tragedy, Fantasy...)" .
+<http://dbpedia.org/property/genre> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToGenre" .
+# 
+# http://dbpedia.org/property/notableWorks
+<http://dbpedia.org/property/notableWorks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/property/notableWorks> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Author> .
+<http://dbpedia.org/property/notableWorks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/property/notableWorks> <http://www.w3.org/2000/01/rdf-schema#comment> "Author writes Story" .
+<http://dbpedia.org/property/notableWorks> <http://www.w3.org/2000/01/rdf-schema#label> "isAuthorOf" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience consumes Format" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dbpedia.org/ontology/type> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Story can be listened to" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dbpedia.org/ontology/type> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Story can be read" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://dbpedia.org/ontology/type> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Video> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Story can be watched" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Story has Character" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.w3.org/2000/01/rdf-schema#comment> "Story has MainCharacter, which is Character" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf> <http://www.w3.org/2000/01/rdf-schema#comment> "AudioFormat is the representation of story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Character is a character of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "a Media Format is consumed by an audience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/resource/Author> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Character is created by Author\ninverse property of CreatesCharacter which implies:\nif Character is present in a story and story is written by Author then Character is created by Author" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is not Finished" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is Finished" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Format is the representation of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory> <http://www.w3.org/2000/01/rdf-schema#comment> "Genre is a theme of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A MainCharacter is a Character of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory> <http://www.w3.org/2000/01/rdf-schema#comment> "ChildAudience is interested by ChildStory" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience is interested by Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory> <http://www.w3.org/2000/01/rdf-schema#comment> "TeenAudience is interested by Teen Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy> <http://www.w3.org/2000/01/rdf-schema#comment> "an audio format is listen to by an audience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy> <http://www.w3.org/2000/01/rdf-schema#comment> "a text format is read by an audience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Story has Status" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf> <http://www.w3.org/2000/01/rdf-schema#comment> "TextFormat is the representation of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf> <http://www.w3.org/2000/01/rdf-schema#comment> "VideoFormat is the representation of Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/resource/Video> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "a video format is watched by an audience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is written under a specific form of discourse (Prose, Verse)" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience listens to audio Format" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience reads Text Format" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "Story targets an Audience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "ChildStory targets ChildAudience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "TeenStory targets TeenAudience" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/resource/Video> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience watches Video Format" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/abstract
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "Plot of a story" .
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "plot" .
+# 
+# http://dbpedia.org/property/name
+<http://dbpedia.org/property/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://dbpedia.org/property/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/resource/Author> .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of an entity" .
+<http://dbpedia.org/property/name> <http://www.w3.org/2000/01/rdf-schema#label> "Name" .
+# 
+# http://dbpedia.org/property/released
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/property/released> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/property/released> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/property/released> <http://www.w3.org/2000/01/rdf-schema#label> "publicationYear" .
+# 
+# http://dbpedia.org/property/title
+<http://dbpedia.org/property/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/property/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://dbpedia.org/property/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://dbpedia.org/property/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://dbpedia.org/property/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of a story" .
+<http://dbpedia.org/property/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of a character, his role" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#language> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/class/yago/WikicatLiteraryGenres
+<http://dbpedia.org/class/yago/WikicatLiteraryGenres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/class/yago/WikicatLiteraryGenres> <http://www.w3.org/2000/01/rdf-schema#comment> "Way of structure of a narrative"@en .
+<http://dbpedia.org/class/yago/WikicatLiteraryGenres> <http://www.w3.org/2000/01/rdf-schema#label> "Genre"@en .
+# 
+# http://dbpedia.org/resource/Audience
+<http://dbpedia.org/resource/Audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Audience> <http://www.w3.org/2000/01/rdf-schema#comment> "An audience is a group of people who participate in a show or encounter a work of art, literature (in which they are called \"readers\"), theatre, music (in which they are called \"listeners\"), video games (in which they are called \"players\"), or academics in any medium. Audience members participate in different ways in different kinds of art. Some events invite overt audience participation and others allow only modest clapping and criticism and reception. (en)" .
+<http://dbpedia.org/resource/Audience> <http://www.w3.org/2000/01/rdf-schema#label> "Audience" .
+# 
+# http://dbpedia.org/resource/Book
+<http://dbpedia.org/resource/Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://dbpedia.org/resource/Book> <http://www.w3.org/2000/01/rdf-schema#comment> "Way of sharing of a story that involves texts or pictures, rarely sounds, and is split in pages"@en .
+<http://dbpedia.org/resource/Book> <http://www.w3.org/2000/01/rdf-schema#label> "Book" .
+# 
+# http://dbpedia.org/resource/Fiction
+<http://dbpedia.org/resource/Fiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Fiction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://dbpedia.org/resource/Fiction> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiction is any creative work, chiefly any narrative work, portraying individuals, events, or places in ways that are imaginary or inconsistent with history, fact, or plausibility. In a narrow sense, \"fiction\" refers to written narratives in prose – often referring specifically to novels, novellas, and short stories. More broadly, however, fiction encompasses imaginary narratives expressed in any medium, including not just writings but also live theatrical performances, films, television programs, radio dramas, comics, role-playing games, and video games."@en .
+<http://dbpedia.org/resource/Fiction> <http://www.w3.org/2000/01/rdf-schema#label> "Fiction" .
+# 
+# http://dbpedia.org/resource/Poetry
+<http://dbpedia.org/resource/Poetry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Poetry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://dbpedia.org/resource/Poetry> <http://www.w3.org/2000/01/rdf-schema#comment> "Poetry (derived from the Greek poiesis, \"making\"), also called verse, is a form of literature that uses aesthetic and often rhythmic qualities of language − such as phonaesthetics, sound symbolism, and metre − to evoke meanings in addition to, or in place of, a prosaic ostensible meaning. A poem is a literary composition, written by a poet, using this principle. A Western cultural tradition (extending at least from Homer to Rilke) associates the production of poetry with inspiration – often by a Muse (either classical or contemporary)."@en .
+<http://dbpedia.org/resource/Poetry> <http://www.w3.org/2000/01/rdf-schema#label> "Poetry"@en .
+# 
+# http://dbpedia.org/resource/Theatre
+<http://dbpedia.org/resource/Theatre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Theatre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://dbpedia.org/resource/Theatre> <http://www.w3.org/2000/01/rdf-schema#comment> "Theatre or theater is a collaborative form of performing art that uses live performers, usually actors or actresses, to present the experience of a real or imagined event before a live audience in a specific place, often a stage. The performers may communicate this experience to the audience through combinations of gesture, speech, song, music, and dance. Elements of art, such as painted scenery and stagecraft such as lighting are used to enhance the physicality, presence and immediacy of the experience. The specific place of the performance is also named by the word \"theatre\" as derived from the Ancient Greek θέατρον (théatron, \"a place for viewing\"), itself from θεάομαι (theáomai, \"to see\", \"to watch\", \"to observe\")." .
+<http://dbpedia.org/resource/Theatre> <http://www.w3.org/2000/01/rdf-schema#label> "Theatre" .
+# 
+# http://dbpedia.org/resource/Video
+<http://dbpedia.org/resource/Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://dbpedia.org/resource/Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Way of sharing of a story that involves images and often sounds, where characters are animated"@en .
+<http://dbpedia.org/resource/Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video" .
+# 
+# http://dbpedia.org/resource/Category:Media_formats
+<http://dbpedia.org/resource/Category:Media_formats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Category:Media_formats> <http://www.w3.org/2000/01/rdf-schema#comment> "Way of sharing of a story"@en .
+<http://dbpedia.org/resource/Category:Media_formats> <http://www.w3.org/2000/01/rdf-schema#label> "Media Format" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/resource/Category:Media_formats> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "Way of sharing that can be listened to."@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrative that was inspired about true events" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography> <http://www.w3.org/2000/01/rdf-schema#label> "Biography" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual or entity that has a role in a narrative"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience composed of person between 3 and 12 years old" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> <http://www.w3.org/2000/01/rdf-schema#label> "Child audience"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> <http://www.w3.org/2000/01/rdf-schema#comment> "Story that targets children between 3 and 12 years old"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory> <http://www.w3.org/2000/01/rdf-schema#label> "Child Story"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Writting form of texts"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm> <http://www.w3.org/2000/01/rdf-schema#label> "Discourse form"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> <http://www.w3.org/2000/01/rdf-schema#comment> "State where the story has an end" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished> <http://www.w3.org/2000/01/rdf-schema#label> "Finished"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Protagonist of a story"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "Main Character" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "dbr:Hero" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Level of progress of a story"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://dbpedia.org/resource/Audience> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://dbpedia.org/class/yago/WikicatLiteraryGenres> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/property/genre> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://dbpedia.org/resource/Category:Media_formats> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/type> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://dbpedia.org/resource/Author> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/author> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrative that tells about at least one main character, is written by at least one author, that has a status, written in a certain discourse form, targets an audience, has literary genre and is available in a media format."@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/resource/Audience> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "Audience composed of persons between 12 and 18 years old"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> <http://www.w3.org/2000/01/rdf-schema#label> "Teen Audience"@en .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> <http://www.w3.org/2000/01/rdf-schema#comment> "Story that targets teenagers (children between 12 and 18 years old)"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory> <http://www.w3.org/2000/01/rdf-schema#label> "Teen Story"@en .
+# 
+# https://dbpedia.org/resource/Author
+<https://dbpedia.org/resource/Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/resource/Author> <http://www.w3.org/2000/01/rdf-schema#comment> "An author is the creator or originator of any written work such as a book or play, and is also considered a writer or poet. More broadly defined, an author is \"the person who originated or gave existence to anything\" and whose authorship determines responsibility for what was created."@en .
+<https://dbpedia.org/resource/Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/resource/Andrew_Davenport
+<http://dbpedia.org/resource/Andrew_Davenport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Andrew_Davenport> <http://www.w3.org/2000/01/rdf-schema#label> "Andrew Davenport" .
+# 
+# http://dbpedia.org/resource/Brothers_Grimm
+<http://dbpedia.org/resource/Brothers_Grimm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Brothers_Grimm> <http://www.w3.org/2000/01/rdf-schema#label> "Brothers Grimm" .
+# 
+# http://dbpedia.org/resource/Charles_Perrault
+<http://dbpedia.org/resource/Charles_Perrault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Charles_Perrault> <http://www.w3.org/2000/01/rdf-schema#label> "Charles Perrault" .
+# 
+# http://dbpedia.org/resource/Hayao_Miyazaki
+<http://dbpedia.org/resource/Hayao_Miyazaki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Hayao_Miyazaki> <http://www.w3.org/2000/01/rdf-schema#label> "Hayao Miyazaki" .
+# 
+# http://dbpedia.org/resource/J._K._Rowling
+<http://dbpedia.org/resource/J._K._Rowling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/J._K._Rowling> <http://www.w3.org/2000/01/rdf-schema#label> "J.K. Rowling" .
+# 
+# http://dbpedia.org/resource/Jean_Racine
+<http://dbpedia.org/resource/Jean_Racine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Jean_Racine> <http://www.w3.org/2000/01/rdf-schema#label> "Jean Racine" .
+# 
+# http://dbpedia.org/resource/Prose
+<http://dbpedia.org/resource/Prose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Prose> <http://www.w3.org/2000/01/rdf-schema#label> "Prose" .
+# 
+# http://dbpedia.org/resource/Victor_Hugo
+<http://dbpedia.org/resource/Victor_Hugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Victor_Hugo> <http://www.w3.org/2000/01/rdf-schema#label> "Victor Hugo" .
+# 
+# http://dbpedia.org/resource/One_(manga_artist)
+<http://dbpedia.org/resource/One_(manga_artist)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/One_(manga_artist)> <http://www.w3.org/2000/01/rdf-schema#label> "ONE" .
+# 
+# http://dbpedia.org/resource/Verse_(poetry)
+<http://dbpedia.org/resource/Verse_(poetry)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dbpedia.org/resource/Verse_(poetry)> <http://www.w3.org/2000/01/rdf-schema#label> "Verse" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character> <http://dbpedia.org/property/name> "Britannicus" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character> <http://www.w3.org/2000/01/rdf-schema#label> "Britannicus (Character)" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Jean_Racine> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Verse_(poetry)> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://dbpedia.org/property/title> "Britanicus" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> <http://www.w3.org/2000/01/rdf-schema#label> "Britannicus (story)" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Epic
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Epic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Epic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Poetry> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/J._K._Rowling> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://dbpedia.org/property/title> "Harry Potter" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter> <http://www.w3.org/2000/01/rdf-schema#label> "Harry Potter" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean> <http://www.w3.org/2000/01/rdf-schema#label> "Jean Valjean" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://dbpedia.org/ontology/author> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Verse_(poetry)> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas> <http://www.w3.org/2000/01/rdf-schema#label> "La légende de Saint Nicolas" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Victor_Hugo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables> <http://www.w3.org/2000/01/rdf-schema#label> "Les Miserables" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Brothers_Grimm> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://dbpedia.org/property/title> "Little Red Riding Hood" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> <http://www.w3.org/2000/01/rdf-schema#label> "Little Red Riding Hood (Grimm)" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Charles_Perrault> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://dbpedia.org/property/title> "Little Red Riding Hood" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> <http://www.w3.org/2000/01/rdf-schema#label> "Little Red Riding Hood (Perrault)" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc> <http://www.w3.org/2000/01/rdf-schema#label> "Mr. Leblanc" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine> <http://www.w3.org/2000/01/rdf-schema#label> "Mr. Madeleine" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Hayao_Miyazaki> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://dbpedia.org/property/title> "My Neighbor Totoro" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro> <http://www.w3.org/2000/01/rdf-schema#label> "My Neighbor Totoro" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/One_(manga_artist)> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/ontology/abstract> "One-Punch Man (Japanese: ワンパンマン, Hepburn: Wanpanman) is a Japanese superhero manga series created by One. It tells the story of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. One wrote the original webcomic manga version in early 2009. A digital manga remake began publication on Shueisha's Tonari no Young Jump website in June 2012. Written by One and illustrated by Yusuke Murata, its chapters are periodically compiled and published into individual tankōbon volumes. As of June 2022, 26 volumes have been released. In North America, Viz Media has licensed the remake manga for English language release and has serialized it in its Weekly Shonen Jump digital magazine. An anime adaptation produced by Madhouse was broadcast in Japan from October to December 2015. A second season, produced by J.C.Staff, was broadcast from April to July 2019. A third season has been announced. Licensed in North America by Viz Media, it premiered in the United States on Adult Swim's Toonami programming block in July 2016. The second season premiered in October 2019. As of June 2012, the original webcomic manga surpassed 7.9 million hits. As of April 2020, the manga remake had sold over 30 million copies worldwide, making it one of the best-selling manga series."@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/property/released> "2015"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://dbpedia.org/property/title> "One-Punch Man: Road to Hero"@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan> <http://www.w3.org/2000/01/rdf-schema#label> "One Punch Man" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation> <http://www.w3.org/2000/01/rdf-schema#label> "Play Captation" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama> <http://dbpedia.org/property/name> "Saitama" .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription> "Main character of Saitama, is able to beat foes in one punch." .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Andrew_Davenport> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://dbpedia.org/property/genre> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn> <http://dbpedia.org/resource/Prose> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Fiction> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Theatre> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent> <http://www.w3.org/2000/01/rdf-schema#label> "Ultime Fauchelevent" .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> <http://www.w3.org/2000/01/rdf-schema#comment> "Story is not finished yet, can be paused or still published."@en .
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing> <http://www.w3.org/2000/01/rdf-schema#label> "Ongoing"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid34 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid37 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

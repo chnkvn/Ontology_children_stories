@@ -1,0 +1,1104 @@
+@prefix : <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#> .
+
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories> rdf:type owl:Ontology ;
+                                                                                rdfs:comment "This is an ontology about children stories"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://dbpedia.org/ontology/author
+<http://dbpedia.org/ontology/author> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     owl:inverseOf <http://dbpedia.org/property/notableWorks> ;
+                                     rdfs:domain :Story ;
+                                     rdfs:range <https://dbpedia.org/resource/Author> ;
+                                     rdfs:comment "Story is Written by Author" ;
+                                     rdfs:label "hasAuthor"@en .
+
+
+###  http://dbpedia.org/ontology/creator
+<http://dbpedia.org/ontology/creator> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :isCreatedBy ;
+                                      rdfs:domain <https://dbpedia.org/resource/Author> ;
+                                      rdfs:range :Character ;
+                                      owl:propertyChainAxiom ( <http://dbpedia.org/property/notableWorks>
+                                                               :hasCharacter
+                                                             ) ;
+                                      rdfs:comment """Author creates Character
+If Author writes Story and Story hasCharacter, then Author creates Characters""" ;
+                                      rdfs:label "createsCharacter" .
+
+
+###  http://dbpedia.org/ontology/genre
+<http://dbpedia.org/ontology/genre> rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                    rdfs:domain <https://dbpedia.org/resource/Author> ;
+                                    rdfs:range <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                                    owl:propertyChainAxiom ( <http://dbpedia.org/property/notableWorks>
+                                                             <http://dbpedia.org/property/genre>
+                                                           ) ;
+                                    rdfs:comment "Author creates work of Genre type" ;
+                                    rdfs:label "writesStoryOfGenre" .
+
+
+###  http://dbpedia.org/ontology/type
+<http://dbpedia.org/ontology/type> rdf:type owl:ObjectProperty ;
+                                   owl:inverseOf :isFormatOf ;
+                                   rdfs:domain :Story ;
+                                   rdfs:range <http://dbpedia.org/resource/Category:Media_formats> ;
+                                   rdfs:comment "Story is published under Format" ;
+                                   rdfs:label "existsIn" .
+
+
+###  http://dbpedia.org/property/genre
+<http://dbpedia.org/property/genre> rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf :isGenreOfStory ;
+                                    rdfs:domain :Story ;
+                                    rdfs:range <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                                    rdfs:comment "Story has Genre (e.g. Tragedy, Fantasy...)" ;
+                                    rdfs:label "belongsToGenre" .
+
+
+###  http://dbpedia.org/property/notableWorks
+<http://dbpedia.org/property/notableWorks> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://dbpedia.org/resource/Author> ;
+                                           rdfs:range :Story ;
+                                           rdfs:comment "Author writes Story" ;
+                                           rdfs:label "isAuthorOf" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#consumes
+:consumes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isConsumedBy ;
+          rdfs:domain <http://dbpedia.org/resource/Audience> ;
+          rdfs:range <http://dbpedia.org/resource/Category:Media_formats> ;
+          rdfs:comment "Audience consumes Format" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInAudioFormat
+:existsInAudioFormat rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://dbpedia.org/ontology/type> ;
+                     owl:inverseOf :isAudioFormatOf ;
+                     rdfs:domain :Story ;
+                     rdfs:range :Audio ;
+                     rdfs:comment "Story can be listened to" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInTextFormat
+:existsInTextFormat rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://dbpedia.org/ontology/type> ;
+                    owl:inverseOf :isTextFormatOf ;
+                    rdfs:domain :Story ;
+                    rdfs:range <http://dbpedia.org/resource/Book> ;
+                    rdfs:comment "Story can be read" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#existsInVideoFormat
+:existsInVideoFormat rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://dbpedia.org/ontology/type> ;
+                     owl:inverseOf :isVideoFormatOf ;
+                     rdfs:domain :Story ;
+                     rdfs:range <http://dbpedia.org/resource/Video> ;
+                     rdfs:comment "Story can be watched" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasCharacter
+:hasCharacter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :isCharacterOf ;
+              rdfs:domain :Story ;
+              rdfs:range :Character ;
+              rdfs:comment "Story has Character" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#hasHero
+:hasHero rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasCharacter ;
+         owl:inverseOf :isHeroOf ;
+         rdfs:domain :Story ;
+         rdfs:range :MainCharacter ;
+         rdfs:comment "Story has MainCharacter, which is Character" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isAudioFormatOf
+:isAudioFormatOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isFormatOf ;
+                 rdfs:comment "AudioFormat is the representation of story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCharacterOf
+:isCharacterOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Story ;
+               rdfs:comment "Character is a character of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isConsumedBy
+:isConsumedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://dbpedia.org/resource/Category:Media_formats> ;
+              rdfs:range <http://dbpedia.org/resource/Audience> ;
+              rdfs:comment "a Media Format is consumed by an audience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCreatedBy
+:isCreatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Character ;
+             rdfs:range <https://dbpedia.org/resource/Author> ;
+             rdfs:comment """Character is created by Author
+inverse property of CreatesCharacter which implies:
+if Character is present in a story and story is written by Author then Character is created by Author""" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isCurrentStatus
+:isCurrentStatus rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isStatus ;
+                 rdfs:domain :Story ;
+                 rdfs:range :Ongoing ;
+                 owl:propertyDisjointWith :isEnded ;
+                 rdfs:comment "Story is not Finished" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isEnded
+:isEnded rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :isStatus ;
+         rdfs:domain :Story ;
+         rdfs:range :Finished ;
+         rdfs:comment "Story is Finished" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isFormatOf
+:isFormatOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain <http://dbpedia.org/resource/Category:Media_formats> ;
+            rdfs:range :Story ;
+            rdfs:comment "Format is the representation of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isGenreOfStory
+:isGenreOfStory rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                rdfs:range :Story ;
+                rdfs:comment "Genre is a theme of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isHeroOf
+:isHeroOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :isCharacterOf ;
+          rdfs:domain :MainCharacter ;
+          rdfs:range :Story ;
+          rdfs:comment "A MainCharacter is a Character of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByChildStory
+:isInterestedByChildStory rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :isInterestedByStory ;
+                          owl:inverseOf :targetsChildAudience ;
+                          rdfs:domain :ChildAudience ;
+                          rdfs:range :ChildStory ;
+                          rdfs:comment "ChildAudience is interested by ChildStory" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByStory
+:isInterestedByStory rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     owl:inverseOf :targetsAudience ;
+                     rdfs:domain <http://dbpedia.org/resource/Audience> ;
+                     rdfs:range :Story ;
+                     rdfs:comment "Audience is interested by Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isInterestedByTeenStory
+:isInterestedByTeenStory rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isInterestedByStory ;
+                         owl:inverseOf :targetsTeenAudience ;
+                         rdfs:domain :TeenAudience ;
+                         rdfs:range :TeenStory ;
+                         rdfs:comment "TeenAudience is interested by Teen Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isListenedToBy
+:isListenedToBy rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isConsumedBy ;
+                owl:inverseOf :listensTo ;
+                rdfs:domain :Audio ;
+                rdfs:range <http://dbpedia.org/resource/Audience> ;
+                owl:propertyChainAxiom ( :isAudioFormatOf
+                                         :targetsAudience
+                                       ) ;
+                rdfs:comment "an audio format is listen to by an audience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isReadBy
+:isReadBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :isConsumedBy ;
+          owl:inverseOf :reads ;
+          rdfs:domain <http://dbpedia.org/resource/Book> ;
+          rdfs:range <http://dbpedia.org/resource/Audience> ;
+          owl:propertyChainAxiom ( :isTextFormatOf
+                                   :targetsAudience
+                                 ) ;
+          rdfs:comment "a text format is read by an audience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isStatus
+:isStatus rdf:type owl:ObjectProperty ;
+          rdfs:domain :Story ;
+          rdfs:range :Status ;
+          rdfs:comment "Story has Status" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isTextFormatOf
+:isTextFormatOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isFormatOf ;
+                rdfs:comment "TextFormat is the representation of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isVideoFormatOf
+:isVideoFormatOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isFormatOf ;
+                 rdfs:comment "VideoFormat is the representation of Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWatchedBy
+:isWatchedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :isConsumedBy ;
+             owl:inverseOf :watches ;
+             rdfs:domain <http://dbpedia.org/resource/Video> ;
+             rdfs:range <http://dbpedia.org/resource/Audience> ;
+             owl:propertyChainAxiom ( :isVideoFormatOf
+                                      :targetsAudience
+                                    ) ;
+             rdfs:comment "a video format is watched by an audience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#isWrittenIn
+:isWrittenIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Story ;
+             rdfs:range :DiscourseForm ;
+             rdfs:comment "Story is written under a specific form of discourse (Prose, Verse)" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#listensTo
+:listensTo rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :consumes ;
+           rdfs:range :Audio ;
+           owl:propertyChainAxiom ( :isInterestedByStory
+                                    :existsInAudioFormat
+                                  ) ;
+           rdfs:comment "Audience listens to audio Format" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#reads
+:reads rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :consumes ;
+       rdfs:range <http://dbpedia.org/resource/Book> ;
+       owl:propertyChainAxiom ( :isInterestedByStory
+                                :existsInTextFormat
+                              ) ;
+       rdfs:comment "Audience reads Text Format" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsAudience
+:targetsAudience rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Story ;
+                 rdfs:range <http://dbpedia.org/resource/Audience> ;
+                 rdfs:comment "Story targets an Audience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsChildAudience
+:targetsChildAudience rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :targetsAudience ;
+                      rdfs:domain :ChildStory ;
+                      rdfs:range :ChildAudience ;
+                      rdfs:comment "ChildStory targets ChildAudience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#targetsTeenAudience
+:targetsTeenAudience rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :targetsAudience ;
+                     rdfs:domain :TeenStory ;
+                     rdfs:range :TeenAudience ;
+                     rdfs:comment "TeenStory targets TeenAudience" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#watches
+:watches rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :consumes ;
+         rdfs:range <http://dbpedia.org/resource/Video> ;
+         owl:propertyChainAxiom ( :isInterestedByStory
+                                  :existsInVideoFormat
+                                ) ;
+         rdfs:comment "Audience watches Video Format" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/abstract
+<http://dbpedia.org/ontology/abstract> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Story ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:comment "Plot of a story" ;
+                                       rdfs:label "plot" .
+
+
+###  http://dbpedia.org/property/name
+<http://dbpedia.org/property/name> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                   rdf:type owl:FunctionalProperty ;
+                                   rdfs:domain :Character ,
+                                               <https://dbpedia.org/resource/Author> ;
+                                   rdfs:range rdfs:Literal ;
+                                   rdfs:comment "Name of an entity" ;
+                                   rdfs:label "Name" .
+
+
+###  http://dbpedia.org/property/released
+<http://dbpedia.org/property/released> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Story ;
+                                       rdfs:range xsd:integer ;
+                                       rdfs:label "publicationYear" .
+
+
+###  http://dbpedia.org/property/title
+<http://dbpedia.org/property/title> rdf:type owl:DatatypeProperty ,
+                                             owl:FunctionalProperty ;
+                                    rdfs:domain :Story ;
+                                    rdfs:range rdfs:Literal ;
+                                    rdfs:comment "Title of a story" ;
+                                    rdfs:label "title" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CharacterDescription
+:CharacterDescription rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Character ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:comment "Description of a character, his role" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#language
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Story ;
+          rdfs:range xsd:language .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/class/yago/WikicatLiteraryGenres
+<http://dbpedia.org/class/yago/WikicatLiteraryGenres> rdf:type owl:Class ;
+                                                      rdfs:comment "Way of structure of a narrative"@en ;
+                                                      rdfs:label "Genre"@en .
+
+
+###  http://dbpedia.org/resource/Audience
+<http://dbpedia.org/resource/Audience> rdf:type owl:Class ;
+                                       rdfs:comment "An audience is a group of people who participate in a show or encounter a work of art, literature (in which they are called \"readers\"), theatre, music (in which they are called \"listeners\"), video games (in which they are called \"players\"), or academics in any medium. Audience members participate in different ways in different kinds of art. Some events invite overt audience participation and others allow only modest clapping and criticism and reception. (en)" ;
+                                       rdfs:label "Audience" .
+
+
+###  http://dbpedia.org/resource/Book
+<http://dbpedia.org/resource/Book> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://dbpedia.org/resource/Category:Media_formats> ;
+                                   rdfs:comment "Way of sharing of a story that involves texts or pictures, rarely sounds, and is split in pages"@en ;
+                                   rdfs:label "Book" .
+
+
+###  http://dbpedia.org/resource/Fiction
+<http://dbpedia.org/resource/Fiction> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                                      rdfs:comment "Fiction is any creative work, chiefly any narrative work, portraying individuals, events, or places in ways that are imaginary or inconsistent with history, fact, or plausibility. In a narrow sense, \"fiction\" refers to written narratives in prose – often referring specifically to novels, novellas, and short stories. More broadly, however, fiction encompasses imaginary narratives expressed in any medium, including not just writings but also live theatrical performances, films, television programs, radio dramas, comics, role-playing games, and video games."@en ;
+                                      rdfs:label "Fiction" .
+
+
+###  http://dbpedia.org/resource/Poetry
+<http://dbpedia.org/resource/Poetry> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                                     rdfs:comment "Poetry (derived from the Greek poiesis, \"making\"), also called verse, is a form of literature that uses aesthetic and often rhythmic qualities of language − such as phonaesthetics, sound symbolism, and metre − to evoke meanings in addition to, or in place of, a prosaic ostensible meaning. A poem is a literary composition, written by a poet, using this principle. A Western cultural tradition (extending at least from Homer to Rilke) associates the production of poetry with inspiration – often by a Muse (either classical or contemporary)."@en ;
+                                     rdfs:label "Poetry"@en .
+
+
+###  http://dbpedia.org/resource/Theatre
+<http://dbpedia.org/resource/Theatre> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+                                      rdfs:comment "Theatre or theater is a collaborative form of performing art that uses live performers, usually actors or actresses, to present the experience of a real or imagined event before a live audience in a specific place, often a stage. The performers may communicate this experience to the audience through combinations of gesture, speech, song, music, and dance. Elements of art, such as painted scenery and stagecraft such as lighting are used to enhance the physicality, presence and immediacy of the experience. The specific place of the performance is also named by the word \"theatre\" as derived from the Ancient Greek θέατρον (théatron, \"a place for viewing\"), itself from θεάομαι (theáomai, \"to see\", \"to watch\", \"to observe\")." ;
+                                      rdfs:label "Theatre" .
+
+
+###  http://dbpedia.org/resource/Video
+<http://dbpedia.org/resource/Video> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://dbpedia.org/resource/Category:Media_formats> ;
+                                    rdfs:comment "Way of sharing of a story that involves images and often sounds, where characters are animated"@en ;
+                                    rdfs:label "Video" .
+
+
+###  http://dbpedia.org/resource/Category:Media_formats
+<http://dbpedia.org/resource/Category:Media_formats> rdf:type owl:Class ;
+                                                     rdfs:comment "Way of sharing of a story"@en ;
+                                                     rdfs:label "Media Format" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Audio
+:Audio rdf:type owl:Class ;
+       rdfs:subClassOf <http://dbpedia.org/resource/Category:Media_formats> ;
+       rdfs:comment "Way of sharing that can be listened to."@en ;
+       rdfs:label "Audio" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Biography
+:Biography rdf:type owl:Class ;
+           rdfs:subClassOf <http://dbpedia.org/class/yago/WikicatLiteraryGenres> ;
+           rdfs:comment "Narrative that was inspired about true events" ;
+           rdfs:label "Biography" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Individual or entity that has a role in a narrative"@en ;
+           rdfs:label "Character" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildAudience
+:ChildAudience rdf:type owl:Class ;
+               rdfs:subClassOf <http://dbpedia.org/resource/Audience> ;
+               rdfs:comment "Audience composed of person between 3 and 12 years old" ;
+               rdfs:label "Child audience"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#ChildStory
+:ChildStory rdf:type owl:Class ;
+            rdfs:subClassOf :Story ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :targetsAudience ;
+                              owl:someValuesFrom :ChildAudience
+                            ] ;
+            rdfs:comment "Story that targets children between 3 and 12 years old"@en ;
+            rdfs:label "Child Story"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#DiscourseForm
+:DiscourseForm rdf:type owl:Class ;
+               rdfs:comment "Writting form of texts"@en ;
+               rdfs:label "Discourse form"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Finished
+:Finished rdf:type owl:Class ;
+          rdfs:subClassOf :Status ;
+          owl:disjointWith :Ongoing ;
+          rdfs:comment "State where the story has an end" ;
+          rdfs:label "Finished"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MainCharacter
+:MainCharacter rdf:type owl:Class ;
+               rdfs:subClassOf :Character ;
+               rdfs:comment "Protagonist of a story"@en ;
+               rdfs:label "Main Character" ;
+               rdfs:seeAlso "dbr:Hero" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing
+:Ongoing rdf:type owl:Class ;
+         rdfs:subClassOf :Status .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Status
+:Status rdf:type owl:Class ;
+        rdfs:comment "Level of progress of a story"@en ;
+        rdfs:label "Status"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Story
+:Story rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://dbpedia.org/ontology/author> ;
+                                                    owl:someValuesFrom <https://dbpedia.org/resource/Author>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://dbpedia.org/ontology/type> ;
+                                                    owl:someValuesFrom <http://dbpedia.org/resource/Category:Media_formats>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://dbpedia.org/property/genre> ;
+                                                    owl:someValuesFrom <http://dbpedia.org/class/yago/WikicatLiteraryGenres>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasHero ;
+                                                    owl:someValuesFrom :Character
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :targetsAudience ;
+                                                    owl:someValuesFrom <http://dbpedia.org/resource/Audience>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isCurrentStatus ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :Status
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isWrittenIn ;
+                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :DiscourseForm
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "Narrative that tells about at least one main character, is written by at least one author, that has a status, written in a certain discourse form, targets an audience, has literary genre and is available in a media format."@en ;
+       rdfs:label "Story" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenAudience
+:TeenAudience rdf:type owl:Class ;
+              rdfs:subClassOf <http://dbpedia.org/resource/Audience> ;
+              rdfs:comment "Audience composed of persons between 12 and 18 years old"@en ;
+              rdfs:label "Teen Audience"@en .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TeenStory
+:TeenStory rdf:type owl:Class ;
+           rdfs:subClassOf :Story ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :targetsAudience ;
+                             owl:someValuesFrom :TeenAudience
+                           ] ;
+           rdfs:comment "Story that targets teenagers (children between 12 and 18 years old)"@en ;
+           rdfs:label "Teen Story"@en .
+
+
+###  https://dbpedia.org/resource/Author
+<https://dbpedia.org/resource/Author> rdf:type owl:Class ;
+                                      rdfs:comment "An author is the creator or originator of any written work such as a book or play, and is also considered a writer or poet. More broadly defined, an author is \"the person who originated or gave existence to anything\" and whose authorship determines responsibility for what was created."@en ;
+                                      rdfs:label "Author" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/resource/Andrew_Davenport
+<http://dbpedia.org/resource/Andrew_Davenport> rdf:type owl:NamedIndividual ;
+                                               rdfs:label "Andrew Davenport" .
+
+
+###  http://dbpedia.org/resource/Brothers_Grimm
+<http://dbpedia.org/resource/Brothers_Grimm> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "Brothers Grimm" .
+
+
+###  http://dbpedia.org/resource/Charles_Perrault
+<http://dbpedia.org/resource/Charles_Perrault> rdf:type owl:NamedIndividual ;
+                                               rdfs:label "Charles Perrault" .
+
+
+###  http://dbpedia.org/resource/Hayao_Miyazaki
+<http://dbpedia.org/resource/Hayao_Miyazaki> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "Hayao Miyazaki" .
+
+
+###  http://dbpedia.org/resource/J._K._Rowling
+<http://dbpedia.org/resource/J._K._Rowling> rdf:type owl:NamedIndividual ;
+                                            rdfs:label "J.K. Rowling" .
+
+
+###  http://dbpedia.org/resource/Jean_Racine
+<http://dbpedia.org/resource/Jean_Racine> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Jean Racine" .
+
+
+###  http://dbpedia.org/resource/Prose
+<http://dbpedia.org/resource/Prose> rdf:type owl:NamedIndividual ;
+                                    rdfs:label "Prose" .
+
+
+###  http://dbpedia.org/resource/Victor_Hugo
+<http://dbpedia.org/resource/Victor_Hugo> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "Victor Hugo" .
+
+
+###  http://dbpedia.org/resource/One_(manga_artist)
+<http://dbpedia.org/resource/One_(manga_artist)> rdf:type owl:NamedIndividual ;
+                                                 rdfs:label "ONE" .
+
+
+###  http://dbpedia.org/resource/Verse_(poetry)
+<http://dbpedia.org/resource/Verse_(poetry)> rdf:type owl:NamedIndividual ;
+                                             rdfs:label "Verse" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Action
+:Action rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Adventure
+:Adventure rdf:type owl:NamedIndividual ,
+                    <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Agrippine
+:Agrippine rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Animation
+:Animation rdf:type owl:NamedIndividual ,
+                    <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#BadEnd
+:BadEnd rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Book
+:Book rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_character
+:Britannicus_character rdf:type owl:NamedIndividual ;
+                       <http://dbpedia.org/property/name> "Britannicus" ;
+                       rdfs:label "Britannicus (Character)" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Britannicus_story
+:Britannicus_story rdf:type owl:NamedIndividual ;
+                   <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Jean_Racine> ;
+                   <http://dbpedia.org/property/genre> :Historical ;
+                   :existsInTextFormat :Book ;
+                   :existsInVideoFormat :PlayCaptation ;
+                   :hasCharacter :Agrippine ,
+                                 :Neron ;
+                   :hasHero :Britannicus_character ;
+                   :isEnded :BadEnd ;
+                   :isWrittenIn <http://dbpedia.org/resource/Verse_(poetry)> ;
+                   :targetsTeenAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> ;
+                   <http://dbpedia.org/property/title> "Britanicus" ;
+                   rdfs:label "Britannicus (story)" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Butcher
+:Butcher rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cartoon
+:Cartoon rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#CatBus
+:CatBus rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Children
+:Children rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Comedy
+:Comedy rdf:type owl:NamedIndividual ,
+                 <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Cosette
+:Cosette rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Dipsy
+:Dipsy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Educational
+:Educational rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Epic
+:Epic rdf:type owl:NamedIndividual ,
+               <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Episode
+:Episode rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Fantasy
+:Fantasy rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Folklore
+:Folklore rdf:type owl:NamedIndividual ,
+                   <http://dbpedia.org/resource/Poetry> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Genos
+:Genos rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HappyEnd
+:HappyEnd rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Harry
+:Harry rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#HarryPotter
+:HarryPotter rdf:type owl:NamedIndividual ;
+             <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/J._K._Rowling> ;
+             <http://dbpedia.org/property/genre> :Adventure ,
+                                                 :Fantasy ,
+                                                 :Magic ;
+             :existsInTextFormat :Book ;
+             :existsInVideoFormat :Movie ;
+             :hasCharacter :Voldemort ;
+             :hasHero :Harry ,
+                      :Hermione ,
+                      :Ron ;
+             :isEnded :HappyEnd ;
+             :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+             :targetsTeenAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> ,
+                                  <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> ;
+             <http://dbpedia.org/property/title> "Harry Potter" ;
+             rdfs:label "Harry Potter" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Hermione
+:Hermione rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Historical
+:Historical rdf:type owl:NamedIndividual ,
+                     :Biography .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Javert
+:Javert rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#JeanValjean
+:JeanValjean rdf:type owl:NamedIndividual ;
+             owl:sameAs :MrLeblanc ;
+             rdfs:label "Jean Valjean" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LaLegendeDeSaintNicolas
+:LaLegendeDeSaintNicolas rdf:type owl:NamedIndividual ;
+                         <http://dbpedia.org/ontology/author> :Unknown ;
+                         <http://dbpedia.org/property/genre> :Folklore ;
+                         :existsInAudioFormat :Song ;
+                         :hasCharacter :Butcher ,
+                                       :Children ;
+                         :hasHero :SaintNicolas ;
+                         :isEnded :HappyEnd ;
+                         :isWrittenIn <http://dbpedia.org/resource/Verse_(poetry)> ;
+                         :targetsChildAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> ;
+                         rdfs:label "La légende de Saint Nicolas" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Laa-Laa
+:Laa-Laa rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LesMisérables
+:LesMisérables rdf:type owl:NamedIndividual ;
+               <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Victor_Hugo> ;
+               <http://dbpedia.org/property/genre> :Historical ,
+                                                   :Tragedy ;
+               :existsInTextFormat :Book ,
+                                   :Manga ,
+                                   :Novel ;
+               :existsInVideoFormat :Movie ;
+               :hasCharacter :Javert ,
+                             :Thenardier ;
+               :hasHero :Cosette ,
+                        :JeanValjean ;
+               :isEnded :HappyEnd ;
+               :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+               :targetsTeenAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> ;
+               rdfs:label "Les Miserables" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRed
+:LittleRed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Grimm
+:LittleRedRidingHood_Grimm rdf:type owl:NamedIndividual ;
+                           <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Brothers_Grimm> ;
+                           <http://dbpedia.org/property/genre> :Tale ;
+                           :existsInTextFormat :Book ;
+                           :hasHero :LittleRed ,
+                                    :Wolf ;
+                           :isEnded :HappyEnd ;
+                           :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+                           :targetsChildAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> ;
+                           <http://dbpedia.org/property/title> "Little Red Riding Hood" ;
+                           rdfs:label "Little Red Riding Hood (Grimm)" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#LittleRedRidingHood_Perrault
+:LittleRedRidingHood_Perrault rdf:type owl:NamedIndividual ;
+                              <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Charles_Perrault> ;
+                              <http://dbpedia.org/property/genre> :Tale ;
+                              :existsInTextFormat :Book ;
+                              :hasHero :LittleRed ,
+                                       :Wolf ;
+                              :isEnded :BadEnd ;
+                              :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+                              :targetsChildAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> ;
+                              <http://dbpedia.org/property/title> "Little Red Riding Hood" ;
+                              rdfs:label "Little Red Riding Hood (Perrault)" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Magic
+:Magic rdf:type owl:NamedIndividual ,
+                <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Manga
+:Manga rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Mei
+:Mei rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Monsters
+:Monsters rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Movie
+:Movie rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrLeblanc
+:MrLeblanc rdf:type owl:NamedIndividual ;
+           owl:sameAs :MrMadeleine ;
+           rdfs:label "Mr. Leblanc" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#MrMadeleine
+:MrMadeleine rdf:type owl:NamedIndividual ;
+             owl:sameAs :UltimeFauchelevent ;
+             rdfs:label "Mr. Madeleine" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#My_Neighbor_Totoro
+:My_Neighbor_Totoro rdf:type owl:NamedIndividual ;
+                    <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Hayao_Miyazaki> ;
+                    <http://dbpedia.org/property/genre> :Animation ,
+                                                        :Comedy ,
+                                                        :Fantasy ;
+                    :existsInVideoFormat :Movie ;
+                    :hasCharacter :CatBus ;
+                    :hasHero :Mei ,
+                             :Satsuki ,
+                             :Totoro ;
+                    :isEnded :HappyEnd ;
+                    :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+                    :targetsChildAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> ,
+                                          <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> ,
+                                          <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo> ;
+                    :targetsTeenAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> ,
+                                         <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> ;
+                    <http://dbpedia.org/property/title> "My Neighbor Totoro" ;
+                    rdfs:label "My Neighbor Totoro" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Neron
+:Neron rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Noo-Noo
+:Noo-Noo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Novel
+:Novel rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#OnePunchMan
+:OnePunchMan rdf:type owl:NamedIndividual ;
+             <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/One_(manga_artist)> ;
+             <http://dbpedia.org/property/genre> :Action ,
+                                                 :Comedy ;
+             :existsInTextFormat :Manga ,
+                                 :WebToon ;
+             :existsInVideoFormat :Episode ;
+             :hasCharacter :Monsters ;
+             :hasHero :Genos ,
+                      :Saitama ;
+             :isCurrentStatus :Ongoing ;
+             :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+             :targetsTeenAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> ,
+                                  <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> ;
+             <http://dbpedia.org/ontology/abstract> "One-Punch Man (Japanese: ワンパンマン, Hepburn: Wanpanman) is a Japanese superhero manga series created by One. It tells the story of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. One wrote the original webcomic manga version in early 2009. A digital manga remake began publication on Shueisha's Tonari no Young Jump website in June 2012. Written by One and illustrated by Yusuke Murata, its chapters are periodically compiled and published into individual tankōbon volumes. As of June 2022, 26 volumes have been released. In North America, Viz Media has licensed the remake manga for English language release and has serialized it in its Weekly Shonen Jump digital magazine. An anime adaptation produced by Madhouse was broadcast in Japan from October to December 2015. A second season, produced by J.C.Staff, was broadcast from April to July 2019. A third season has been announced. Licensed in North America by Viz Media, it premiered in the United States on Adult Swim's Toonami programming block in July 2016. The second season premiered in October 2019. As of June 2012, the original webcomic manga surpassed 7.9 million hits. As of April 2020, the manga remake had sold over 30 million copies worldwide, making it one of the best-selling manga series."@en ;
+             <http://dbpedia.org/property/released> 2015 ;
+             <http://dbpedia.org/property/title> "One-Punch Man: Road to Hero"@en ;
+             rdfs:label "One Punch Man" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ongoing
+:Ongoing rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#PlayCaptation
+:PlayCaptation rdf:type owl:NamedIndividual ;
+               rdfs:label "Play Captation" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Po
+:Po rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Ron
+:Ron rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SaintNicolas
+:SaintNicolas rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Saitama
+:Saitama rdf:type owl:NamedIndividual ;
+         <http://dbpedia.org/property/name> "Saitama" ;
+         :CharacterDescription "Main character of Saitama, is able to beat foes in one punch." .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Satsuki
+:Satsuki rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Song
+:Song rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#SunBaby
+:SunBaby rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tale
+:Tale rdf:type owl:NamedIndividual ,
+               <http://dbpedia.org/resource/Fiction> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Teletubbies
+:Teletubbies rdf:type owl:NamedIndividual ;
+             <http://dbpedia.org/ontology/author> <http://dbpedia.org/resource/Andrew_Davenport> ;
+             <http://dbpedia.org/property/genre> :Cartoon ,
+                                                 :Educational ;
+             :existsInVideoFormat :Episode ;
+             :hasCharacter :Noo-Noo ,
+                           :SunBaby ;
+             :hasHero :Dipsy ,
+                      :Laa-Laa ,
+                      :Po ,
+                      :TinkyWinky ;
+             :isEnded :HappyEnd ;
+             :isWrittenIn <http://dbpedia.org/resource/Prose> ;
+             :targetsChildAudience <http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Thenardier
+:Thenardier rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#TinkyWinky
+:TinkyWinky rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Totoro
+:Totoro rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Tragedy
+:Tragedy rdf:type owl:NamedIndividual ,
+                  <http://dbpedia.org/resource/Fiction> ,
+                  <http://dbpedia.org/resource/Theatre> .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#UltimeFauchelevent
+:UltimeFauchelevent rdf:type owl:NamedIndividual ;
+                    rdfs:label "Ultime Fauchelevent" .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Unknown
+:Unknown rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Voldemort
+:Voldemort rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#WebToon
+:WebToon rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#Wolf
+:Wolf rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#12-15yo> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#15-18yo> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#3-6yo> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#6-9yo> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo
+<http://www.semanticweb.org/kevin-starlabs/ontologies/2023/1/children_stories#9-12yo> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Ongoing rdfs:comment "Story is not finished yet, can be paused or still published."@en ;
+         rdfs:label "Ongoing"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Britannicus_character
+                        :Britannicus_story
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :LittleRedRidingHood_Grimm
+                        :LittleRedRidingHood_Perrault
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
